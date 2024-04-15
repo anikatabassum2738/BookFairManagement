@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CoordinatinateWithAuthoritiesSceneController">
+    <children>
+         <Label layoutX="271.0" layoutY="35.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Coordinate with Authorities" />
+         <TextField fx:id="authorityContactField" layoutX="117.0" layoutY="93.0" prefHeight="31.0" prefWidth="518.0" promptText="Enter Authority Contact Information" />
+         <TextArea fx:id="informationArea" layoutX="116.0" layoutY="143.0" prefHeight="100.0" prefWidth="518.0" promptText="Enter details to be shared with authorities" />
+         <Button fx:id="sendInformationButton" layoutX="119.0" layoutY="261.0" onAction="#sendInformationButtonOnAction" text="Send Information to Authorities" />
+         <Separator layoutX="116.0" layoutY="304.0" orientation="HORIZONTAL" prefHeight="55.0" prefWidth="518.0" />
+         <Label layoutX="116.0" layoutY="339.0" style="-fx-font-size: 14px;" text="Collaboration Tools" />
+         <Button fx:id="requestAssistanceButton" layoutX="116.0" layoutY="380.0" onAction="#requestAssistanceButtonOnAction" text="Request Immediate Assistance" />
+         <Button fx:id="updateLogButton" layoutX="116.0" layoutY="422.0" onAction="#updateLogButtonOnAction" text="Update Incident Log" />
+         <Button fx:id="backButton" layoutX="584.0" layoutY="438.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+    </children>
+</AnchorPane>

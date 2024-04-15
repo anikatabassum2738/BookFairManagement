@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="371.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DirectionSceneController">
+    <children>
+        <Label layoutX="212.0" layoutY="47.0" text="Get Directions" />
+        <Label layoutX="38.0" layoutY="216.0" text="Suggested Route:" />
+        <Label fx:id="routeLabel" layoutX="171.0" layoutY="211.0" prefHeight="31.0" prefWidth="315.0" /> <!-- Updated to include fx:id -->
+        <Button layoutX="204.0" layoutY="269.0" onAction="#calculateRouteButtonOnAction" text="Calculate Route" />
+        <TextField fx:id="currentLocationTextField" layoutX="173.0" layoutY="117.0" />
+        <Label layoutX="33.0" layoutY="122.0" text="Current Location:" />
+        <Label layoutX="38.0" layoutY="165.0" text="Venue Address:" />
+        <TextField fx:id="venueAddressTextField" layoutX="173.0" layoutY="160.0" />
+        <Button fx:id="backButton" layoutX="426.0" layoutY="310.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+    </children>
+</AnchorPane>

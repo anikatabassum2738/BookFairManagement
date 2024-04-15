@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ReportIncidentSceneController">
+    <children>
+        <VBox layoutX="56.0" layoutY="77.0" prefHeight="313.0" prefWidth="519.0" spacing="10">
+            <TextField fx:id="natureField" prefHeight="0.0" prefWidth="554.0" promptText="Nature of Incident" />
+            <TextField fx:id="locationField" promptText="Location" />
+            <HBox spacing="10">
+                <DatePicker fx:id="datePicker" promptText="Date" />
+                <TextField fx:id="timeField" promptText="Time" />
+            </HBox>
+            <TextArea fx:id="descriptionArea" prefHeight="100.0" promptText="Describe the incident..." />
+            <Button onAction="#submitButtonOnAction" text="Submit Report" />
+            <Label fx:id="statusLabel" text="" />
+        </VBox>
+         <Label layoutX="264.0" layoutY="26.0" text="Report Incident" />
+      <Button fx:id="backButton" layoutX="524.0" layoutY="390.0" onAction="#backButtonOnAction" text="Back" />
+    </children>
+</AnchorPane>

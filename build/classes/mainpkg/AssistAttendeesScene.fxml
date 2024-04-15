@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AssistAttendeesSceneController">
+    <children>
+        <VBox layoutX="69.0" layoutY="92.0" prefHeight="367.0" prefWidth="598.0" spacing="10">
+            <ListView fx:id="inquiryList" prefHeight="200.0" prefWidth="300.0" />
+            <TextArea fx:id="responseArea" prefHeight="100.0" promptText="Type your response or assistance details here..." />
+            <HBox spacing="10">
+                <Button onAction="#resolveButtonOnAction" text="Resolve" />
+                <Button onAction="#escalateButtonOnAction" text="Escalate" />
+            </HBox>
+            <Label fx:id="statusLabel" prefHeight="21.0" prefWidth="615.0" text="" />
+        </VBox>
+         <Label layoutX="307.0" layoutY="43.0" text="Attendee Inquiries" />
+         <Button fx:id="backButton" layoutX="616.0" layoutY="459.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+    </children>
+</AnchorPane>
